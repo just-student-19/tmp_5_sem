@@ -1,0 +1,11 @@
+@startuml
+node "Клиент" as Client {
+  [Браузер]
+}
+
+node "Сервер" as Server {
+  [Система объявлений]
+}
+
+Client --> Server : HTTP
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+actor Пользователь as User
+participant "Система объявлений" as AdSystem
+
+User -> AdSystem : Запрос на размещение объявления
+AdSystem -> AdSystem : Сохранить объявление
+AdSystem --> User : Подтверждение успешного размещения
+
+User -> AdSystem : Запрос на удаление объявления
+AdSystem -> AdSystem : Удалить объявление
+AdSystem --> User : Подтверждение успешного удаления
+@enduml
